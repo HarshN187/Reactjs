@@ -6,6 +6,8 @@ import ExpensesList from "./ExpensesList";
 import ExpensesChart from "./ExpensesChart";
 import "./Expenses.css";
 
+//we can buildmore than one component in one file
+
 //if every expenseitem are called they have there own useState, State is seperated
 //it refresh only that component which have that hook declared
 //use const when declare hook
@@ -20,6 +22,8 @@ import "./Expenses.css";
 //Two Way binding
 //Set state variable value as the input field value prop so now we can clear the state and enter empty stringm in it
 //means for input we don't just listening to changes but we can pass a new value back into the input So we can chnage or reset our input programmatically.
+
+//IF components internal states are contolled by react fully then it is controlled compo. otherwise uncontrolled
 
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2020");
